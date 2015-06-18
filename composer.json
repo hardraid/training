@@ -1,0 +1,31 @@
+{
+	"name": "summa/training",
+	"description": "Summa Training",
+	"type": "project",
+	"license": "MIT",
+	"repositories": [{
+		"type": "package",
+            "package": {
+                "name": "ajaxorg/ace",
+                "version": "1.1.9",
+                "source": {
+                    "url": "https://github.com/ajaxorg/ace-builds.git",
+                    "type": "git",
+                    "reference": "tags/v1.1.9"
+                },
+                "require": {
+                	"composer/installers": "~1.0"
+                },
+                "extra": {
+			        "installer-paths": {
+			            "vendor/codeigniter/framework/{$name}": ["ajaxorg/ace"]
+			    }
+    }
+            }
+		}],
+	"require": {
+		"php": ">=5.3",
+		"codeigniter/framework": "^3",
+		"ajaxorg/ace": "1.1.9"
+	}
+}
